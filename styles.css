@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
+}
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  display: flex;
+  margin: 0px 20px;
+  align-items: center;
+}
+
+nav {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem 1.5rem;
+
+  box-shadow: 1px 3px 1px #f1f1f1;
+  /* sticky navbar */
+  position: sticky;
+  opacity: 0.98;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* nav {
+  margin-left: 2rem;
+} */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 30px;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0 20px;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: orange;
+}
+
+/* #active a {
+  color: orange;
+} */
+.hamburger {
+  display: none;
+}
+.bar {
+  background-color: #020202;
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 6px auto;
+}
+
+/* dark and light mode */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  padding: 5px;
+  width: 59px;
+  height: 29px;
+  background-color: #111;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sun {
+  font-size: 1.2rem;
+  color: #ffa502;
+}
+.moon {
+  font-size: 1.2rem;
+  color: rgb(108, 108, 233);
+}
+.switcher {
+  position: absolute;
+  width: 21.6px;
+  height: 21px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkbox:checked + .label .switcher {
+  transform: translateX(25px);
+}
+
+body.dark {
+  background: #171a1d;
+  color: white;
+}
+body.dark .background {
+  background: #171a1d;
+  color: white;
+}
+body.dark nav .logo h1 {
+  color: orange;
+}
+body.dark nav .nav-ul li a {
+  color: white;
+}
+body.dark nav .nav-ul li a:hover {
+  color: orange;
+}
+
+body.dark nav {
+  background-color: #1e272e;
+  color: #fff;
+}
+body.dark nav {
+  box-shadow: 2px 3px 2px orange;
+}
+body.dark .hero-info h1 {
+  color: white;
+}
+body.dark .hero-info .para2 {
+  color: rgb(212, 209, 209);
+}
+body.dark .hero-info .para1 {
+  color: rgb(236, 235, 235);
+}
+body.dark .about-me-description p {
+  color: rgb(233, 232, 232);
+}
+body.dark .skill p {
+  color: white;
+}
+body.dark .skills .para {
+  color: rgb(233, 232, 232);
+}
+body.dark .projects .quote {
+  color: rgb(233, 232, 232);
+}
+body.dark .card p {
+  color: rgb(233, 232, 232);
+}
+body.dark .card {
+  box-shadow: 2px 3px 12px #cec9c9;
+}
+body.dark .footer-para {
+  color: rgb(233, 232, 232);
+}
+/*section hero*/
+.background {
+  background: #eff4fd;
+}
+.section-hero {
+  margin: 0 auto;
+  padding: 3rem 4rem 3rem 4rem;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+}
+.hero-img img {
+  border-radius: 50%;
+  border: 6px solid orange;
+  margin-bottom: 2rem;
+}
+.hero-info {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+  justify-content: center;
+}
+.hero-info h1 {
+  color: rgb(8, 8, 8);
+  font-size: 2.6rem;
+}
+.hero-info h1 span {
+  color: orange;
+  font-size: 2.6rem;
+}
+.hero-info .para1 {
+  color: rgb(81, 80, 80);
+  font-size: 1.03rem;
+  font-weight: bolder;
+  margin-top: 0.8rem;
+}
+.hero-info .para2 {
+  margin-top: 0.6rem;
+  color: rgb(165, 163, 163);
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: black;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  color: white;
+  background-color: orange;
+}
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: orange;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: rgb(241, 234, 234);
+  color: orange;
+  /* border: 3px solid orange; */
+  box-shadow: inset 0 0 0 3px orange;
+}
+
+/*about-me section*/
+
+.about-me {
+  padding: 3.6rem 1rem 0rem 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2.6rem 7.8rem;
+}
+.sub-heading {
+  color: orange;
+  /* border-bottom: 3px solid orange; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+}
+
+.about-me-info {
+  padding: 3rem 3rem;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  min-height: 2rem;
+  gap: 4.8rem;
+}
+.about-me-img img {
+  margin-top: 1.5rem;
+  width: 30rem;
+  height: 70vh;
+}
+.about-me-description {
+  padding: 2rem 0rem 8.8rem 0rem;
+}
+.description {
+  margin-bottom: 1rem;
+  color: rgb(165, 163, 163);
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 2rem;
+  text-indent: initial;
+}
+.description span {
+  color: orange;
+  text-decoration: dotted;
+}
+
+/*skills section*/
+.skills {
+  padding: 3.6rem 1rem 0rem 1rem;
+}
+.skills .sub-heading {
+  padding-top: 50px;
+}
+
+.fluid-container {
+  margin: 2rem auto;
+  padding: 0rem 7rem;
+  margin: 4rem 2.8rem;
+}
+.skills-content {
+  padding: 2rem 7.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-box {
+  display: grid;
+  grid-template-columns: repeat(6, 0.6fr);
+  gap: 3rem;
+  justify-items: center;
+  padding-bottom: 3rem;
+  /* vertical-align: middle; */
+}
+.skill {
+  /* vertical-align: middle; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill .icon {
+  width: 3rem;
+  height: 3.5rem;
+  color: orange;
+}
+.skill p {
+  font-size: 1.3rem;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.para {
+  /* padding-top: 3rem; */
+  margin-bottom: 1.8rem;
+  color: rgb(165, 163, 163);
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 2rem;
+  text-indent: initial;
+}
+.para span {
+  color: orange;
+  text-decoration: dotted;
+}
+
+/* projects section */
+.projects {
+  padding: 3.6rem 1rem 0rem 1rem;
+}
+.projects .sub-heading {
+  padding-top: 50px;
+}
+
+.quote {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  color: rgb(165, 163, 163);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 2rem;
+  text-indent: initial;
+}
+/* cards implementation */
+.card-container {
+  margin: auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  row-gap: 30px;
+  justify-items: center;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 320px;
+  height: 450px;
+  /* background-color: aqua; */
+  border-radius: 10px;
+  box-shadow: 2px 3px 22px #e0dfdf;
+}
+.card-img {
+  width: 320px;
+  height: 150px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ffa502;
+  padding: 1rem;
+}
+.img-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 30px 10px 10px 0;
+  line-height: 2.4rem;
+}
+.card-body {
+  padding: 1.5rem 1rem;
+}
+.body-text1 {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+  line-height: 2rem;
+}
+.body-text2 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+.body-text2 span {
+  font-weight: bold;
+}
+.cardbtn {
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.cardbtn-primary {
+  background-color: orange;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.cardbtn-primary:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+.cardbtn-secondary {
+  color: orange;
+  border-radius: 0.5rem;
+  border: 1px solid orange;
+}
+.cardbtn-secondary:hover {
+  box-shadow: 2px 2px 5px black;
+}
+.center-button {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: black;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  color: white;
+  background-color: orange;
+}
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: orange;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #fff;
+  color: orange;
+  /* border: 3px solid orange; */
+  box-shadow: inset 0 0 0 3px orange;
+}
+
+footer {
+  padding: 1rem 1rem 0rem 1rem;
+}
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connect {
+  padding: 2rem 7rem;
+}
+.contact-image {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(165, 163, 163);
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 2rem;
+  text-indent: initial;
+}
+.footer-content {
+  margin: 2rem;
+}
+.footer-content ul {
+  list-style-type: none;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.footer-content ul li {
+  margin-right: 1.7rem;
+  transition: 0.3s ease-in;
+}
+.footer-content ul li:hover {
+  transform: translateY(-9px);
+  cursor: pointer;
+}
+footer .icon {
+  width: 3rem;
+  height: 2.8rem;
+  color: orange;
+}
+footer span {
+  color: orange;
+  margin-left: 5px;
+}
+
+/*
+#############################
+     media queries
+############################ */
+@media screen and (max-width: 768px) {
+  .logo {
+    display: flex;
+    margin: 0px 10px;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  body.dark .hamburger span {
+    background-color: #fff;
+  }
+  nav {
+    /* background-color: yellow; */
+    width: 101.6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 1.5rem;
+  }
+
+  nav ul {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    top: 4.6rem;
+    width: 100%;
+    text-align: center;
+  }
+  body.dark nav ul {
+    background-color: black;
+  }
+
+  body.dark nav .nav-ul li a {
+    color: white;
+  }
+  body.dark nav .nav-ul li a:hover {
+    color: orange;
+  }
+
+  body.dark nav .nav-ul li:last-child a:hover {
+    color: orange;
+  }
+  ul.active {
+    left: 0;
+  }
+
+  li {
+    margin: 2rem 0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .logo {
+    display: flex;
+    margin: 0px 10px;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  body.dark .hamburger {
+    color: white;
+  }
+  nav {
+    /* background-color: yellow; */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 1.5rem;
+  }
+
+  nav ul {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    top: 4.6rem;
+    width: 100%;
+    text-align: center;
+  }
+  body.dark nav ul {
+    background-color: black;
+  }
+
+  body.dark nav .nav-ul li a {
+    color: white;
+  }
+  body.dark nav .nav-ul li a:hover {
+    color: orange;
+  }
+  body.dark nav .nav-ul li:last-child a:hover {
+    color: orange;
+    background-color: white;
+    border: 2px solid orange;
+  }
+  ul.active {
+    left: 0;
+  }
+
+  li {
+    margin: 2rem 0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}

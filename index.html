@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabiya &mdash; portfolio</title>
+    <!-- <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" /> -->
+
+    <!-- Ionic icons usage installation -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#" class="logo" style="text-decoration: none; color: orange">
+          <h1>Sabiya<span></span></h1
+        ></a>
+      </div>
+
+      <div class="nav-ul" id="nav-ul">
+        <ul>
+          <li class="nav-link active" id="active"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#about-me">About</a></li>
+          <li class="nav-link"><a href="#skills">Skills</a></li>
+          <li class="nav-link"><a href="#projects">Projects</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Dark/light theme switcher -->
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="sunny" class="sun"></ion-icon>
+          <ion-icon name="moon" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
+
+      <!-- Bars -->
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!--     
+#############################
+     Section hero
+############################  -->
+
+    <section class="section-hero background" id="hero">
+      <div class="hero-content">
+        <div class="hero-description">
+          <div class="hero-img">
+            <!-- <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                width="220px"
+                height="220px"
+              /> -->
+            <img
+              src="images/hero image.jpg"
+              width="260px"
+              height="260px"
+              alt="sabiya hero image"
+            />
+          </div>
+          <div class="hero-info">
+            <!-- <h2>Hi,</h2> -->
+            <h1>I'm <span> Sabiya Tabassum</span></h1>
+            <p class="para1">An aspiring Full-Stack Web Developer.</p>
+            <p class="para2">
+              This is my official portfolio website to showcase all my works
+              related to web development.
+            </p>
+          </div>
+          <div class="buttons">
+            <a href="#" class="btn btn-primary">Hire me</a>
+            <a href="#" class="btn btn-primary">View Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--     
+#############################
+     About section
+############################  -->
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <p class="sub-heading">About me</p>
+        <div class="about-me-info">
+          <div class="about-me-img">
+            <img
+              src="images/undraw_multitasking.svg"
+              alt="sabiya coding image"
+            />
+          </div>
+          <div class="about-me-description">
+            <!-- <h3>A li'l bit about myself</h3> -->
+            <p class="description">
+              I'm a <span>computer science graduate</span> who loves to build
+              and develop things via web.
+            </p>
+            <p class="description">
+              Also I'm a passionate <span>self-taught</span> web developer who
+              has a major interest in web development field. All thanks to
+              <span>marquee</span> tag which drawn my attention during my
+              college days and ignited my interest towards buiding things via
+              web. It's true that visual appearances drags peoples' attention.
+            </p>
+
+            <p class="description">
+              I love building and learning new things, writing and speaking to
+              people.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <p class="sub-heading">My Skills</p>
+      <div class="fluid-container">
+        <!-- <p class="sub-heading">My Skills</p> -->
+        <div class="skills-content">
+          <div class="skills-box">
+            <div class="skill skill-1">
+              <ion-icon class="icon" name="logo-html5"></ion-icon>
+              <p>HTML</p>
+            </div>
+
+            <div class="skill skill-2">
+              <ion-icon class="icon" name="logo-css3"></ion-icon>
+              <p>CSS</p>
+            </div>
+
+            <div class="skill skill-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                class="icon"
+                fill="currentColor"
+                class="bi bi-bootstrap-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"
+                />
+                <path
+                  d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"
+                />
+              </svg>
+              <p>Bootstrap</p>
+            </div>
+
+            <div class="skill skill-4">
+              <ion-icon class="icon" name="logo-javascript"></ion-icon>
+              <p>JS</p>
+            </div>
+
+            <div class="skill skill-5">
+              <ion-icon class="icon" name="logo-react"></ion-icon>
+              <p>ReactJS</p>
+            </div>
+
+            <div class="skill skill-6">
+              <ion-icon class="icon" name="logo-python"></ion-icon>
+              <p>Python</p>
+            </div>
+          </div>
+          <p class="para">
+            I work with HTML, CSS, JavaScript, React, Python mostly along with
+            suitable packages and version control using <span>Git</span> and
+            <span>GitHub.</span> And also I'm familiar with different editors
+            like VS code Editor, Sublime Text; Tools like
+            <span>Chrome DevTools, CodePen,</span> etc. and deployment sites
+            like <span>Netlify, Vercel, Heroku </span> etc.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <p class="sub-heading">My Projects</p>
+      <p class="quote">
+        Life is trying things to see if they work. ~ Ray Bradbury
+      </p>
+      <div class="card-container">
+        <!-- card-1 -->
+        <div class="card">
+          <div class="card-img">
+            <p class="img-text">CLI App - How well do you know me?</p>
+          </div>
+
+          <div class="card-body">
+            <p class="body-text1">
+              This is a Do you Know me Quiz based CLI App developed and hosted
+              at repl.it
+            </p>
+            <p class="body-text2"><span>Language Used :</span> NodeJS</p>
+          </div>
+          <div class="cardbtn">
+            <a
+              href="https://repl.it/@sabiyatabassum/NodeJSproject1-Do-you-Know-me?embed=1&output=1#index.js"
+              class="cardbtn cardbtn-primary"
+              >Live Project</a
+            >
+            <a
+              href="https://github.com/nerdfswd/NodeJS-how-well-do-you-know-me"
+              class="cardbtn cardbtn-secondary"
+              >View Sourcecode</a
+            >
+          </div>
+        </div>
+        <!-- card-2 -->
+
+        <div class="card">
+          <div class="card-img">
+            <p class="img-text">Yoda Speak Translator</p>
+          </div>
+
+          <div class="card-body">
+            <p class="body-text1">
+              This is a Yoda Speak Translator which translates english into Yoda
+              Language, developed and hosted at netlify.
+            </p>
+            <p class="body-text2"><span>Language Used :</span> JavaScript</p>
+          </div>
+          <div class="cardbtn">
+            <a
+              href="https://yodaspeaktranslator.netlify.app"
+              class="cardbtn cardbtn-primary"
+              >Live Project</a
+            >
+            <a
+              href="https://github.com/nerdfswd/yoda-translator-app"
+              class="cardbtn cardbtn-secondary"
+              >View Sourcecode</a
+            >
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="card">
+          <div class="card-img">
+            <p class="img-text">Minion Speak Translator</p>
+          </div>
+
+          <div class="card-body">
+            <p class="body-text1">
+              This is a Minion Speak Translator which translates english into
+              Minion Language developed and hosted at netlify.
+            </p>
+            <p class="body-text2"><span>Language Used :</span> JavaScript</p>
+          </div>
+          <div class="cardbtn">
+            <a
+              href="https://minionspeaktranslator.netlify.app"
+              class="cardbtn cardbtn-primary"
+              >Live Project</a
+            >
+            <a
+              href="https://github.com/nerdfswd/banana-talk-app"
+              class="cardbtn cardbtn-secondary"
+              >View Sourcecode</a
+            >
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="card">
+          <div class="card-img">
+            <p class="img-text">Music Recommender</p>
+          </div>
+
+          <div class="card-body">
+            <p class="body-text1">
+              This is a Simple Music Recommender developed and hosted at
+              codesandbox.
+            </p>
+            <p class="body-text2"><span>Language Used :</span> ReactJS</p>
+          </div>
+          <div class="cardbtn">
+            <a href="https://lqh3g.csb.app/" class="cardbtn cardbtn-primary"
+              >Live Project</a
+            >
+            <a
+              href="https://github.com/nerdfswd/Music-Recommender-using-React"
+              class="cardbtn cardbtn-secondary"
+              >View Sourcecode</a
+            >
+          </div>
+        </div>
+        <!-- card-5 -->
+        <div class="card">
+          <div class="card-img">
+            <p class="img-text">Emoji Interpreter</p>
+          </div>
+
+          <div class="card-body">
+            <p class="body-text1">
+              This is a Simple Emoji Interpreter developed and hosted at
+              codesandbox.
+            </p>
+            <p class="body-text2"><span>Language Used :</span> ReactJS</p>
+          </div>
+          <div class="cardbtn">
+            <a href="https://qf62i.csb.app/" class="cardbtn cardbtn-primary"
+              >Live Project</a
+            >
+            <a
+              href="https://github.com/nerdfswd/Emoji-Interpretor-using-React"
+              class="cardbtn cardbtn-secondary"
+              >View Sourcecode</a
+            >
+          </div>
+        </div>
+        <!-- card-6 -->
+
+        <div class="card">
+          <div class="card-img">
+            <p class="img-text">Minimalistic Portfolio Website</p>
+          </div>
+
+          <div class="card-body">
+            <p class="body-text1">
+              This is a simple and responsive portfolio website having all the
+              related work links at one place.
+            </p>
+            <p class="body-text2"><span>Language Used :</span> HTML,CSS,JS</p>
+          </div>
+          <div class="cardbtn">
+            <a
+              href="https://sabiyatabassum.netlify.app/"
+              class="cardbtn cardbtn-primary"
+              >Live Project</a
+            >
+            <a
+              href="https://github.com/nerdfswd/sabiyatabassum-portfolio-website"
+              class="cardbtn cardbtn-secondary"
+              >View Sourcecode</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="center-button">
+      <p><a href="#" class="btn btn-primary">View More projects</a></p>
+    </div>
+
+    <footer id="contact">
+      <div class="footer-container">
+        <img
+          src="images/undraw_social_girl.svg"
+          alt="connect image"
+          style="opacity: 0.09; height: 15%"
+        />
+
+        <div class="contact-image">
+          <p class="sub-heading connect">Let's connect</p>
+          <p class="footer-para">
+            I'm open to collaborate on web, python related projects. <br />Below
+            are my social handles where we can connect.
+          </p>
+          <div class="footer-content">
+            <ul>
+              <li>
+                <a href="https://github.com/shanolhere"
+                  ><ion-icon class="icon" name="logo-github"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><ion-icon class="icon" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><ion-icon class="icon" name="logo-codepen"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href=""><ion-icon class="icon" name="mail"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="footer-para">
+            Copyright &copy; Made with &hearts; by
+            <span> Sabiya </span>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
