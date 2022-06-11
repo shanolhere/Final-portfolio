@@ -280,13 +280,18 @@ body.dark .footer-para {
 .about-me-info {
   padding: 3rem 3rem;
   display: grid;
-  grid-template-columns: 0.9fr 1fr;
-  min-height: 2rem;
-  gap: 4.8rem;
+  /* grid-template-columns: 0.9fr 1fr;
+  min-height: 2rem; */
+  /* gap: 4.8rem; */
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  gap: 10px 80px;
+  width: 1100px;
+  height: 450px;
 }
 .about-me-img img {
-  margin-top: 1.5rem;
-  width: 30rem;
+  margin-top: 0rem;
+  width: 28rem;
   height: 70vh;
 }
 .about-me-description {
