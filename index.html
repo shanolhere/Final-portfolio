@@ -24,16 +24,17 @@
     />
 
     <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
+    <header>
       <div class="logo">
         <a href="#" class="logo" style="text-decoration: none; color: orange">
           <h1>Sabiya<span></span></h1
         ></a>
       </div>
 
-      <div class="nav-ul" id="nav-ul">
+      <nav class="nav-ul" id="nav-ul">
         <ul>
           <li class="nav-link active" id="active"><a href="#">Home</a></li>
           <li class="nav-link"><a href="#about-me">About</a></li>
@@ -41,7 +42,7 @@
           <li class="nav-link"><a href="#projects">Projects</a></li>
           <li class="nav-link"><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </nav>
 
       <!-- Dark/light theme switcher -->
       <div class="theme-switch">
@@ -55,11 +56,10 @@
 
       <!-- Bars -->
       <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </ion>
+    </header>
 
     <!--     
 #############################
@@ -374,7 +374,7 @@
         />
 
         <div class="contact-image">
-          <p class="sub-heading connect">Let's connect</p>
+          <p class="sub-heading connect">Connect</p>
           <p class="footer-para">
             I'm open to collaborate on web, python related projects. <br />Below
             are my social handles where we can connect.
@@ -403,8 +403,8 @@
           </div>
 
           <p class="footer-para">
-            Copyright &copy; Made with &hearts; by
-            <span> Sabiya </span>.
+            Copyright &copy; Made with &hearts; by 
+            <span>  Sabiya </span>.
           </p>
         </div>
       </div>

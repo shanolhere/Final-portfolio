@@ -14,22 +14,23 @@ body {
 html {
   scroll-behavior: smooth;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 .logo {
   display: flex;
   margin: 0px 20px;
   align-items: center;
 }
-
-nav {
-  /* background-color: yellow; */
+header {
+  padding: 0 4.8rem;
+  height: 4rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: white;
-  padding: 1rem 1.5rem;
-
+  background-color: #fff;
   box-shadow: 1px 3px 1px #f1f1f1;
   /* sticky navbar */
   position: sticky;
@@ -38,9 +39,17 @@ nav {
   left: 0;
   z-index: 1000;
 }
-/* nav {
-  margin-left: 2rem;
-} */
+
+nav {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 1.5rem;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -64,19 +73,29 @@ nav ul li a:active {
   color: orange;
 }
 
-/* #active a {
-  color: orange;
-} */
 .hamburger {
   display: none;
+  background: transparent;
+  cursor: pointer;
 }
-.bar {
+
+.mobile-nav-icon {
+  width: 3rem;
+  height: 4rem;
+  color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* .bar {
   background-color: #020202;
   display: block;
   width: 30px;
   height: 4px;
   margin: 6px auto;
-}
+} */
 
 /* dark and light mode */
 .checkbox {
@@ -647,18 +666,22 @@ footer span {
     display: block;
     cursor: pointer;
   }
+  /* .theme-switch {
+    margin-left: -20px;
+  } */
   body.dark .hamburger {
     color: white;
   }
   nav {
     /* background-color: yellow; */
+    gap: 10px;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 1rem 1.5rem;
+    padding: 1rem 0rem;
   }
 
   nav ul {
