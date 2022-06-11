@@ -146,18 +146,18 @@ body.dark .background {
 body.dark nav .logo h1 {
   color: orange;
 }
-body.dark nav .nav-ul li a {
+body.dark nav ul li a {
   color: white;
 }
-body.dark nav .nav-ul li a:hover {
+body.dark nav ul li a:hover {
   color: orange;
 }
 
-body.dark nav {
+body.dark header {
   background-color: #1e272e;
   color: #fff;
 }
-body.dark nav {
+body.dark header {
   box-shadow: 2px 3px 2px orange;
 }
 body.dark .hero-info h1 {
