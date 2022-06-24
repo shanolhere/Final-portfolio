@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabiya &mdash; portfolio</title>
+    <!-- <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" /> -->
+
+    <!-- Ionic icons usage installation -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" rel="stylesheet" />
+    <link href="viewProjects.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html" class="logo" style="text-decoration: none; color: orange">
+          <h1>Sabiya<span></span></h1
+        ></a>
+      </div>
+
+      <nav class="nav-ul" id="nav-ul">
+        <ul>
+          <li class="nav-link active" id="active"><a href="index.html">Home</a></li>
+          <li class="nav-link"><a href="index.html#about-me">About</a></li>
+          <li class="nav-link"><a href="index.html#skills">Skills</a></li>
+          <li class="nav-link"><a href="index.html#projects">Projects</a></li>
+          <li class="nav-link"><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Dark/light theme switcher -->
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="sunny" class="sun"></ion-icon>
+          <ion-icon name="moon" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
+
+      <!-- Bars -->
+      <div class="hamburger" id="hamburger">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </ion>
+    </header>
+
+   <!-- Projects Section starts here -->
+   <section class="projects" id="projects">
+        <p class="sub-heading">My Projects</p>
+        <p class="quote">
+            Life is trying things to see if they work. ~ Ray Bradbury
+        </p>
+        <div class="wrapper">
+            <div class="buttonWrapper">
+            <button class="tab-button activeClass" style="border-top-left-radius: 10px;" data-id="Javascript">Javascript</button>
+            <button class="tab-button" data-id="React">React</button>
+            <button class="tab-button" style="border-top-right-radius: 10px;" data-id="Others">Others</button>
+            </div>
+            <div class="contentWrapper">
+              <div class="content activeClass" id="Javascript">
+                <div class="card-container">
+                    <!-- card-1 -->
+                    <div class="card">
+                    <div class="card-img">
+                        <p class="img-text">CLI App - How well do you know me?</p>
+                    </div>
+            
+                    <div class="card-body">
+                        <p class="body-text1">
+                        This is a Do you Know me Quiz based CLI App developed and hosted
+                        at repl.it
+                        </p>
+                        <p class="body-text2"><span>Language Used :</span> NodeJS</p>
+                    </div>
+                    <div class="cardbtn">
+                        <a
+                        href="https://repl.it/@sabiyatabassum/NodeJSproject1-Do-you-Know-me?embed=1&output=1#index.js"
+                        class="cardbtn cardbtn-primary"
+                        >Live Project</a
+                        >
+                        <a
+                        href="https://github.com/nerdfswd/NodeJS-how-well-do-you-know-me"
+                        class="cardbtn cardbtn-secondary"
+                        >View Sourcecode</a
+                        >
+                    </div>
+                    </div>
+                    <!-- card-2 -->
+            
+                    <div class="card">
+                    <div class="card-img">
+                        <p class="img-text">Yoda Speak Translator</p>
+                    </div>
+            
+                    <div class="card-body">
+                        <p class="body-text1">
+                        This is a Yoda Speak Translator which translates english into Yoda
+                        Language, developed and hosted at netlify.
+                        </p>
+                        <p class="body-text2"><span>Language Used :</span> JavaScript</p>
+                    </div>
+                    <div class="cardbtn">
+                        <a
+                        href="https://yodaspeaktranslator.netlify.app"
+                        class="cardbtn cardbtn-primary"
+                        >Live Project</a
+                        >
+                        <a
+                        href="https://github.com/nerdfswd/yoda-translator-app"
+                        class="cardbtn cardbtn-secondary"
+                        >View Sourcecode</a
+                        >
+                    </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card">
+                    <div class="card-img">
+                        <p class="img-text">Minion Speak Translator</p>
+                    </div>
+            
+                    <div class="card-body">
+                        <p class="body-text1">
+                        This is a Minion Speak Translator which translates english into
+                        Minion Language developed and hosted at netlify.
+                        </p>
+                        <p class="body-text2"><span>Language Used :</span> JavaScript</p>
+                    </div>
+                    <div class="cardbtn">
+                        <a
+                        href="https://minionspeaktranslator.netlify.app"
+                        class="cardbtn cardbtn-primary"
+                        >Live Project</a
+                        >
+                        <a
+                        href="https://github.com/nerdfswd/banana-talk-app"
+                        class="cardbtn cardbtn-secondary"
+                        >View Sourcecode</a
+                        >
+                    </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card">
+                    <div class="card-img">
+                        <p class="img-text">Music Recommender</p>
+                    </div>
+            
+                    <div class="card-body">
+                        <p class="body-text1">
+                        This is a Simple Music Recommender developed and hosted at
+                        codesandbox.
+                        </p>
+                        <p class="body-text2"><span>Language Used :</span> ReactJS</p>
+                    </div>
+                    <div class="cardbtn">
+                        <a href="https://lqh3g.csb.app/" class="cardbtn cardbtn-primary"
+                        >Live Project</a
+                        >
+                        <a
+                        href="https://github.com/nerdfswd/Music-Recommender-using-React"
+                        class="cardbtn cardbtn-secondary"
+                        >View Sourcecode</a
+                        >
+                    </div>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="card">
+                    <div class="card-img">
+                        <p class="img-text">Emoji Interpreter</p>
+                    </div>
+            
+                    <div class="card-body">
+                        <p class="body-text1">
+                        This is a Simple Emoji Interpreter developed and hosted at
+                        codesandbox.
+                        </p>
+                        <p class="body-text2"><span>Language Used :</span> ReactJS</p>
+                    </div>
+                    <div class="cardbtn">
+                        <a href="https://qf62i.csb.app/" class="cardbtn cardbtn-primary"
+                        >Live Project</a
+                        >
+                        <a
+                        href="https://github.com/nerdfswd/Emoji-Interpretor-using-React"
+                        class="cardbtn cardbtn-secondary"
+                        >View Sourcecode</a
+                        >
+                    </div>
+                    </div>
+                    <!-- card-6 -->
+            
+                    <div class="card">
+                    <div class="card-img">
+                        <p class="img-text">Minimalistic Portfolio Website</p>
+                    </div>
+            
+                    <div class="card-body">
+                        <p class="body-text1">
+                        This is a simple and responsive portfolio website having all the
+                        related work links at one place.
+                        </p>
+                        <p class="body-text2"><span>Language Used :</span> HTML,CSS,JS</p>
+                    </div>
+                    <div class="cardbtn">
+                        <a
+                        href="https://sabiyatabassum.netlify.app/"
+                        class="cardbtn cardbtn-primary"
+                        >Live Project</a
+                        >
+                        <a
+                        href="https://github.com/nerdfswd/sabiyatabassum-portfolio-website"
+                        class="cardbtn cardbtn-secondary"
+                        >View Sourcecode</a
+                        >
+                    </div>
+                    </div>
+                </div>
+              </div>
+            <p class="content" id="React">
+                2
+            </p>
+            <p class="content" id="Others">
+                3
+            </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer id="contact">
+        <div class="footer-container">
+          <img
+            src="images/undraw_social_girl.svg"
+            alt="connect image"
+            style="opacity: 0.09; height: 15%"
+          />
+  
+          <div class="contact-image">
+            <p class="sub-heading connect">Connect</p>
+            <p class="footer-para">
+              I'm open to collaborate on web, python related projects. <br />Below
+              are my social handles where we can connect.
+            </p>
+            <div class="footer-content">
+              <ul>
+                <li>
+                  <a href="https://github.com/shanolhere"
+                    ><ion-icon class="icon" name="logo-github"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><ion-icon class="icon" name="logo-linkedin"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><ion-icon class="icon" name="logo-codepen"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><ion-icon class="icon" name="mail"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+  
+            <p class="footer-para">
+              Copyright &copy; Made with &hearts; by 
+              <span>  Sabiya </span>.
+            </p>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="viewProjects.js"></script>
+      <script src="index.js"></script>
+    </body>
+  </html>
+  
