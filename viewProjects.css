@@ -67,6 +67,17 @@ body.dark .content {
   height: 520px;
   /* background-color: aqua;*/
 }
+.card {
+  color: black;
+}
+.content img {
+  float: center;
+  width: 250px;
+  display: grid;
+  place-items: center;
+  margin: 1rem auto;
+  opacity: 0.7;
+}
 /* @media screen and (max-width: 768px) {
   .card-container {
     margin: auto 2rem;
